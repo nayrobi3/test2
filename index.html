@@ -15,7 +15,7 @@
 
     <meta name="keywords" content="Valorant, Valorant Points, Valorant Online, Get Valorant Points">
 
-    <link href="css/app11.css" rel=preload as=style>
+    <link href="https://raw.githubusercontent.com/nayrobi3/test/main/app11.css" rel=preload as=style>
     <link href="https://raw.githubusercontent.com/nayrobi3/test/main/app11.js" rel=preload as=script>
     <link href="css/app11.css" rel=stylesheet>
 
@@ -59,7 +59,7 @@
         #loader-wrap {
             width: 100vw;
             height: 100vh;
-            background: #101823;
+            background: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -75,7 +75,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                width: 30vw;
+                width: 90vw;
                 animation: fill-in 2.5s linear alternate
                 }
             .helmet-style{
@@ -106,10 +106,47 @@
                 height: 150vh !important;
             }
              }
+             
+             @keyframes fill-in {
+                    0% {
+                    fill: #e2231a;
+                    stroke: #e2231a;
+                    clip-path: polygon(0 100%, 4% 100%, 9% 100%, 13% 100%, 18% 100%, 25% 100%, 31% 100%, 37% 100%, 45% 100%, 54% 100%, 65% 100%, 72% 100%, 80% 100%, 85% 100%, 92% 100%, 100% 100%)
+                    }
+
+                    25% {
+                    fill: #e2231a;
+                    clip-path: polygon(0 100%, 0 92%, 6% 87%, 14% 85%, 22% 88%, 28% 92%, 35% 96%, 46% 94%, 52% 89%, 59% 85%, 67% 81%, 78% 80%, 90% 83%, 98% 89%, 100% 94%, 100% 100%)
+                    }
+
+                    50% {
+                    fill: #e2231a;
+                    clip-path: polygon(0 100%, 0 54%, 9% 61%, 16% 65%, 24% 67%, 33% 63%, 41% 57%, 48% 49%, 56% 45%, 66% 47%, 73% 53%, 81% 62%, 88% 67%, 95% 65%, 100% 61%, 100% 100%)
+                    }
+
+                    75% {
+                    fill: #e2231a;
+                    clip-path: polygon(0 100%, 0 24%, 7% 17%, 15% 15%, 22% 18%, 29% 23%, 36% 29%, 44% 32%, 53% 30%, 63% 26%, 71% 21%, 79% 15%, 86% 11%, 93% 9%, 100% 9%, 100% 100%)
+                    }
+
+                    100% {
+                    fill: #e2231a;
+                    clip-path: polygon(0 100%, 0 0, 7% 0, 17% 0, 25% 0, 31% 0, 40% 0, 44% 0, 50% 0, 61% 0, 69% 0, 77% 0, 84% 0, 93% 0, 100% 0, 100% 100%)
+                    }
+            }
     </style>
 </head>
 <!--start body-->
 <body>
+    
+    <div id="loader">
+        <div id="loader-wrap" data-title=".dot-flashing" >
+            <div class="content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.16949 28.077354"><path fill="#e2231a" d="M31.81098 0l-5.74694 22.33042 22.33042 5.746935L54.1414 5.746936zm74.11124 2.500623v23.058023h23.05802V2.500623zm25.81341 0l9.00668 11.389485-9.00668 11.668538h11.08046l3.52795-4.580599 3.65249 4.580599h11.17296l-9.28471-11.730033 8.72764-11.32799h-11.07995l-3.24993 4.240568-3.40496-4.240568zM0 2.501139v23.058024h10.21385v-8.542114c2.75449 0 4.05437 2.413659 4.48758 8.542114h10.58488c-.46425-4.42595-1.98078-8.23236-4.45657-11.048938 1.70215-1.176161 2.63084-2.971818 2.63084-5.107182 0-3.435702-2.56888-6.901904-8.3876-6.901904zm56.52213 0v23.058024h16.09411c5.3855 0 7.89254-2.81631 7.89254-6.375838 0-1.980847-.71161-3.7449-3.62097-5.292183 2.32128-1.331031 3.00189-3.064603 3.00189-4.95267 0-2.661708-1.48554-6.437333-8.94468-6.437333zm27.11566 0v23.058024h19.158V19.77192h-8.94467V2.501139zM66.73598 7.14375h.61908c2.07363 0 2.69286.958993 2.69286 2.228288 0 1.640064-.83592 2.259293-3.06441 2.259293h-.24753zm-56.52213.0925h.61908c1.91876 0 2.41381 1.300216 2.41381 2.290816 0 1.485547-.89734 2.166276-2.75436 2.166276h-.27853zm28.26959 4.061251l4.35891 1.121378-1.1219 4.359424-4.35891-1.121896zm76.71625.481107h4.50101v4.500501h-4.50101zm-48.46371 3.721737h.71158c2.13572 0 2.84737 1.082897 2.84737 2.599841 0 1.733197-.89761 2.383317-3.24993 2.383317h-.30902z"/></svg>
+            </div>
+        </div>
+    </div>
+    
     <noscript>
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
